@@ -1,0 +1,143 @@
+.first{
+    min-height: 8rem;
+    background-color: rgb(40, 58, 112);
+    /* float: left; */
+    
+}
+.scnd{
+    text-align:left;
+    padding-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    margin-bottom: 2%;
+    /* position:sticky;
+    top:0;
+    background-color: rgb(174, 212, 212);
+    border:2px solid blue; */
+    
+}
+
+.thrd{
+
+    /* color: aliceblue;
+    text-align: right;
+    padding-top: 8rem; */
+    height: 30rem;
+    position: relative;
+    /* background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll; */
+    /* margin-bottom: 1%;*/
+
+}
+.thrd > img{
+    position: absolute;
+    width: 100%;
+    height: 30rem;
+}      
+.thrd > h3 {
+    position: absolute;
+    right: 0;
+    padding-top: 10%;
+    margin-right: 2%;
+    color: white;
+    line-height: 1.6;
+    font-size: larger;
+}
+
+.forth{
+    height: 30rem;
+    position: relative;
+    margin-top: 2%;
+    margin-bottom: 2%;
+ 
+}
+.forth > img{
+    position: absolute;
+    width: 100%;
+    height: 30rem;
+ 
+}      
+.forth > h3{  
+    position: absolute;
+    right: 0;
+    padding-top: 10%;
+    margin-right: 2%;
+    color: white;
+    line-height: 1.6;
+    font-size: larger;
+ 
+}
+.fifth{
+    height: 30rem;
+    position: relative;
+ 
+}
+.fifth > img{
+    position: absolute;
+    width: 100%;
+    height: 30rem;
+
+}      
+.fifth > h3{  
+    position: absolute;
+    right: 0;
+    padding-top: 10%;
+    margin-right: 2%;
+    color: white;
+    line-height: 1.6;
+    font-size: larger;
+ 
+}
+
+.footer {
+    background-color: #7e7d7e;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.contact {
+    flex: 1;
+}
+
+.contact h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.logo {
+    flex: 1;
+    text-align: right;
+}
+
+.logo img {
+    max-width: 200px; /* Adjust the width to your logo size */
+}
+
+  
+  
+h1{
+    color: aliceblue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    text-align: center;
+    padding-top: 2%;
+}
+h2{
+    color: #30d1ee;
+    
+}
+p{
+    margin-bottom: 4%;
+    line-height: 1.5;
+}

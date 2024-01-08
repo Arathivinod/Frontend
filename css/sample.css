@@ -1,0 +1,65 @@
+* { margin: 0;
+    padding: 0;}
+h1 {
+    text-align: center;
+    color: brown;
+    margin-top: 2%;
+    }
+    p{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+        font-size: larger;
+        /* font-weight: bold; */
+        color: rgb(22, 8, 59);
+        margin-top: 2%;
+    }
+.para{
+    font-family:"Arial",serif ;
+        font-style: italic;
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(22, 8, 59);
+        margin-top: 2%;
+}
+body {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmL7iv5UFJpCISjyIFeZqZzaVAtWNZhqwCA&usqp=CAU");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: right top;
+    /* background: #fff url("hogwarts-crest21.gif")no-repeat center; */
+}
+.test{
+    /* border-style: dashed;
+    border-width: thick;
+    border-radius: 5px;
+    border-color: aquamarine; */
+    border: 5px solid red;
+    /* margin-top: 2%;
+    margin-right: 2%;
+    
+    margin-bottom: 2%;
+    margin-left: 2%; */
+    padding-top: 2%;
+    padding-right: 2%;
+    min-height: 6rem;
+    background-color: rgb(255, 206, 150);
+}
+/* .position{
+    background-color: blue;
+    min-height: 6rem;
+    position:fixed;
+    bottom: 0;
+    right: 0;
+    border: 3px solid #73ad21;
+}  */
+.pos{
+    position: sticky;
+    top 0;
+    background-color: green;
+    border: 2px solid #4caf50;
+    /* right: 0;
+    width: 200px;
+    height: 100px;
+    border:  3px solid #73ad21; */
+}
