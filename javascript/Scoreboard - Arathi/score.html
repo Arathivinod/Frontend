@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="score.css">
+    <title>Basketball Scoreboard</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Scoreboard</h1>
+        <div class="team-container">
+            <div class="team" id="team1">
+                <h2 id="team1Name">Team 1</h2>
+                <p class="score" id="score1">0</p>
+                <button class="addScore" data-team="team1" data-points="1">+1</button>
+            </div>
+            <div class="team" id="team2">
+                <h2 id="team2Name">Team 2</h2>
+                <p class="score" id="score2">0</p>
+                <button class="addScore" data-team="team2" data-points="1">+1</button>
+            </div>
+        </div>
+        <div class="timer-container">
+            <div class="timer">
+                <h2>Timer</h2>
+                <p id="gameClock">0.10</p>
+            </div>
+            <div class="timer-buttons">
+                <button id="startTimer">Start</button>
+                <button id="resetTimer">Reset</button>
+            </div>
+        </div>
+        <div class="winner">
+            <h2>Winner</h2>
+            <p id="winnerText">No winner yet.</p>
+        </div>
+    </div>
+    <script src="score.js"></script>
+</body>
+</html>

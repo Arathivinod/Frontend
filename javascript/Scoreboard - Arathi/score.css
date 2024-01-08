@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scoreboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.team {
+    background-color: #e8b3b3;
+    border: 1px solid #bf5959;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+    flex: 1; /* Allows the team divs to share available horizontal space */
+}
+
+.team h2 {
+    margin: 5px;
+    color: rgb(203, 12, 12);
+}
+.team-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Display in two columns */
+    grid-gap: 20px;
+}
+.addScore, #resetScore, #startTimer, #resetTimer {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(203, 12, 12); /* Darker shade for the buttons */
+    border: none;
+    color: rgb(244, 244, 244);
+    margin-right: 10px;
+    border-radius: 5px; /* Add rounded corners */
+}
+
+.addScore:hover, .resetScore:hover, .startTimer:hover, .resetTimer:hover {
+    background-color: #45a049; /* Darker shade when hovered */
+}
+
+.addScore:active, .resetScore:active, .startTimer:active, .resetTimer:active {
+    background-color: #367939; /* Darker shade when pressed */
+}
+
+
+.score {
+    background-color: #fefefe;
+    border: 1px solid #0f0d0d;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+button {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.clock {
+    text-align: center;
+    background-color: #e8b3b3;
+    border: 1px solid #bf5959;
+    padding: 20px;
+    width: 100%; /* Set the clock div's width to 100% */
+}
+
+.clock h2 {
+    margin: 0;
+}

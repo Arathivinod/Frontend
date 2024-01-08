@@ -1,0 +1,70 @@
+/* Add this CSS for character options */ 
+.character-options-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 100px; /* Add top margin to bring the grid down */
+    background-color: rgb(153, 218, 251);
+    border-radius: 20px;
+    
+}
+.character-description {
+    display: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Style the character description text */
+.character-description p {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+p{ 
+    color: rgb(4, 126, 213);
+    size-adjust: 0;
+}
+.container {
+    margin-top: 5%;
+    text-align: center;
+
+}
+
+.character-option {
+    text-align:center;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.character-option img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.selected-character {
+    color: blue;
+}
+
+.option-button {
+    background-color: rgb(39, 195, 226);
+    color: white;
+    padding: 15px 32px;
+}
+.dark-background {
+    background-color: black;
+    color: white;
+  }
+  .light-background {
+    background-color: white;
+    color: black;
+  }
