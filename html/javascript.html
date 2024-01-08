@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form onsubmit="">'
+        <input type="number" id="no1">
+        <input type="number" id="no2">
+        <input type="submit" value="submit">
+    </form> -->
+    <div id="res"></div>
+    <div id="res1"></div>
+    <div id="res2"></div>
+    <div id="res3"></div>
+    <div id="res4"></div>
+    <div id="res5"></div>
+
+
+    <script type="text/javascript">
+        document.write("<hr>");
+        document.write("Hello world");
+        document.write("<hr>");
+        document.write("here");
+        document.write("<hr>");
+        console.log("print in console");
+        
+        // document.getElementById("no2").innerHTML=y;
+        // function add()
+        let color="YELLOW";
+        let lstname="JOHNSON";
+        document.getElementById("res5").innerHTML = color + lstname;
+        let l=16;
+        let w=7.5;
+        let z=l*w;
+        document.getElementById("res").innerHTML=z;
+        const person ={fname:"JOHN",lname :"DOE"};
+        document.getElementById("res1").innerHTML=person.fname;
+        document.getElementById("res2").innerHTML=person.lname;
+        const cars=["Saab","Volvo","BMW"]
+        document.getElementById("res3").innerHTML=cars[0];
+        const date = new Date("2022-03-05")
+        document.getElementById("res4").innerHTML=date;
+        // document.write(z);
+    </script>
+    
+    
+</body>
+</html>
