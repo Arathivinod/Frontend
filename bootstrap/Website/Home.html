@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" class="img-fluid" />
+            </a>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" onclick="bgchange()" id="change">
+                <label class="form-check-label" for="flexSwitchCheckChecked">Toggle</label>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav nav-tabs ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="workout.html">Workout</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">First Timers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Trainers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Locations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Shop</a>
+                    </li>
+                </ul>
+
+                <a class="btn btn-outline-success" href="login.html">Log out</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://wallpapers.com/images/hd/fitness-pictures-fiol9oyixy31mv5g.jpg"
+                    class="d-block w-75 mx-auto" alt="Placeholder Image 1" style="height: 800px;">
+            </div>
+            <div class="carousel-item">
+                <img src="https://wallpapers.com/images/hd/gym-motivation-workout-ds3fphdfnmdrzbu3.jpg"
+                    class="d-block w-75 mx-auto" alt="Placeholder Image 2" style="height: 800px;">
+            </div>
+            <div class="carousel-item">
+                <img src="https://w0.peakpx.com/wallpaper/707/698/HD-wallpaper-bodybuilding-barbell-biceps-exercises-fitness-gym.jpg"
+                    class="d-block w-75 mx-auto" alt="Placeholder Image 3" style="height: 800px;">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Welcome to Ever Fit - Your Ultimate Fitness Companion</h1>
+                <p>Discover a new way to achieve your fitness goals with Ever Fit. Whether you're looking to build
+                    strength, improve flexibility, or enhance your overall well-being, Ever Fit has you covered.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 column-with-image">
+                <h2 style="color: #8fd421;">Explore Diverse Workouts</h2>
+                <p style="color:  #fffdfd;">Choose from a variety of workout programs designed for all fitness levels.
+                    From high-intensity interval training (HIIT) to calming yoga sessions, we have something for
+                    everyone.</p>
+            </div>
+            <div class="col-md-6" style="padding-top: 40px;">
+                <h2>Meet Our Trainers</h2>
+                <p>Our experienced trainers are here to guide you on your fitness journey. Get personalized training
+                    plans and expert advice to help you reach your full potential.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Join Ever Fit Today!</h2>
+                <p>Download the Ever Fit app now and start your fitness journey. Achieve your goals, connect with a
+                    supportive community, and transform your life.</p>
+                <button class="btn btn-primary">Download Now</button>
+            </div>
+        </div>
+    </div>
+   
+
+
+    <footer class="bg-dark text-light fixed-bottom" style="display:none;" id="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et justo vitae justo commodo
+                        blandit. Proin eu justo vel nunc blandit fringilla.</p>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: example@email.com<br>Phone: 123-456-7890</p>
+                    <h5>Location</h5>
+                    <p>123 Fitness Street<br>Cityville, State 12345</p>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Fitness Links</h5>
+                    <p><a href="#">Fitness Program 1</a></p>
+                    <p><a href="#">Fitness Program 2</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

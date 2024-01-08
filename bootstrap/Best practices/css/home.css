@@ -1,0 +1,8 @@
+.navbar-brand img {
+    max-height: 100px; /* Adjust the max-height as needed */
+}
+.custom-search-bar {
+    font-size: 18px; /* Adjust the font size as needed */
+    padding: 10px; /* Adjust the padding as needed */
+    width: 500px;
+}

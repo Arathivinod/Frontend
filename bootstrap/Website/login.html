@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg sticky-top  navbar-light bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.png" class="img-fluid"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="Home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+            <a class="btn btn-outline-success" href="signup.html">Sign Up</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Login Container -->
+<div class="login-container">
+    <div class="card bg-light p-4 shadow login-card">
+        <img src="images/logo.png" class="card-img-top" alt="logo">
+        <h4 class="display-5 text-center">Login</h4>
+        <div id="emailAlert" class="alert alert-warning alert-dismissible fade show d-none" role="alert">
+            Please enter a valid email.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <div id="emailSuccess" class="alert alert-success alert-dismissible fade show d-none" role="alert">
+            Email is valid.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <div id="passwordAlert" class="alert alert-warning alert-dismissible fade show d-none" role="alert">
+            Please enter a valid password.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <div id="passwordSuccess" class="alert alert-success alert-dismissible fade show d-none" role="alert">
+            Password is valid.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <form class="was-validated" action="Home.html" id="LoginForm" onsubmit="return validateLogin()">
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required onfocus="showAlert('emailAlert')">
+                <div class="invalid-feedback">
+                    Please enter a valid email.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter your password" required onfocus="showAlert('passwordAlert')">
+                <div class="invalid-feedback">
+                    Please enter a valid password.
+                </div>
+                <small class="form-text"><a href="#">Forgot Password?</a></small>
+            </div>
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" id="termsCheck" required>
+                <label class="form-check-label" for="termsCheck">
+                    I agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                    Please check the checkbox to continue.
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success d-block mx-auto" data-bs-dismiss="alert">Login</button>
+        </form>
+    </div>
+</div>
+
+<script src="js/login.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

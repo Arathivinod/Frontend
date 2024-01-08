@@ -1,0 +1,23 @@
+body {
+    background-color: #c2fec7;
+    margin: 0;
+    padding: 0;
+}
+
+.card-width {
+    width: 400px;
+}
+
+.btn-primary {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+h4 {
+    color: #4CAF50;
+}
+
+.bg{
+    background-color: rgb(144, 168, 158);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

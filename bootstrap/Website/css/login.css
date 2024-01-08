@@ -1,0 +1,32 @@
+body {
+    background-color: #c2fec7;
+}
+
+.navbar-brand img {
+    max-height: 70px;
+}
+
+.navbar {
+    max-height: 60%;
+    margin: 0 auto;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-card {
+    width: 400px;
+    margin-top: -50px;
+}
+
+h4 {
+    color: #4CAF50;
+}
+.bg{
+    background-color: rgb(144, 168, 158);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

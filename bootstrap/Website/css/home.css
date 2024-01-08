@@ -1,0 +1,77 @@
+body {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Light font color */
+    margin-bottom: 270px;
+    padding: 0;
+    font-family: 'Arial', sans-serif; /* Choose your preferred font family */
+}
+#carouselExampleSlidesOnly{
+padding-top: 20px;
+}
+.navbar {
+    background-color: #4CAF50; /* Green navbar background color */
+    max-height: 60%; /* Adjust the max-width as needed */
+    margin: 0 auto; /* Center the navbar */
+}
+
+.navbar-brand img {
+    max-height: 70px; /* Adjust the max-height as needed */
+}
+
+.navbar-nav .nav-link {
+    color: #25452a; /* White font color for navbar links */
+}
+
+.navbar-toggler-icon {
+    background-color: #fff; /* White color for the toggler icon */
+}
+
+/* Footer styling */
+footer {
+    position:relative;
+    bottom: 0;
+    width: 100%;
+    color: #fff; /* Text color for the footer */
+    padding: 10px;
+    text-align: center;
+}
+.container{
+    padding-top: 20px;
+}
+
+/* Column with image styling */
+.column-with-image {
+    background-image: url('https://cdn.pixabay.com/photo/2021/10/19/11/35/yoga-6723315_640.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #4CAF50; /* Set text color to white for better readability */
+    padding: 100px;
+    border-radius: 10px; /* Optional: Add rounded corners to the container */
+    margin-top: 20px; /* Optional: Add some top margin to separate from the edge */
+    margin-bottom: 30px;
+}
+
+/* Main content section styling */
+h1, h2, p {
+    color: #cfd2cf; /* Green font color for main content */
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #4CAF50; /* Green button background color */
+    color: #fff; /* White font color for the button */
+}
+div.col:has(p), div.col:has(h2) {
+padding: 20px; /* Adjust the padding value as needed */
+}
+.workout-card {
+    background-color: #222;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.bg{
+    background-color: rgb(144, 168, 158);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

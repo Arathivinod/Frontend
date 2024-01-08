@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+  
+      <a class="navbar-brand me-3" href="#"><img src="images/logo.png" class="img-fluid" alt="logo" /></a>
+      <!-- Added me-3 class to create margin on the right -->
+  
+      <form class="d-flex">
+        <input class="form-control me-2 me-md-4 custom-search-bar" type="search"
+          placeholder="🔍 Search for Movies, Events, Plays, Sports, and Activities" aria-label="Search">
+      </form>
+  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse justify-content-center">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Movies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Stream</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Plays</a>
+          </li>
+        </ul>
+  
+        <a class="btn btn-danger" href="#">Sign in</a>
+      </div>
+  
+    </div>
+  </nav>
+  
+
+  <!-- Body Content -->
+  <div class="container mt-4">
+    <div id="recommendedMoviesCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2>Recommended Movies</h2>
+          <div class="row">
+            <!-- Column 1 -->
+            <div class="col-md-4">
+              <div class="card">
+                <img src="images/1.avif" class="card-img-top" alt="Card Image1">
+                <div class="card-body">
+                  <h5 class="card-title">Animal</h5>
+                  <p class="card-text">Action/Crime/Drama</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="col-md-4">
+              <div class="card">
+                <img src="images/2.avif" class="card-img-top" alt="Card Image2">
+                <div class="card-body">
+                  <h5 class="card-title">Bad Manners</h5>
+                  <p class="card-text">Action/Crime/Thriller</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="col-md-4">
+              <div class="card">
+                <img src="images/3.avif" class="card-img-top" alt="Card Image3">
+                <div class="card-body">
+                  <h5 class="card-title">Napoleon</h5>
+                  <p class="card-text">Action/Drama/Historical</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional carousel items -->
+        <div class="carousel-item">
+          <h2>Recommended Movies</h2>
+          <div class="row">
+            <!-- Additional Column 1 -->
+            <div class="col-md-4">
+              <div class="card">
+                <img src="images/4.avif" class="card-img-top" alt="Card Image4">
+                <div class="card-body">
+                  <h5 class="card-title">Sugar Factory</h5>
+                  <p class="card-text">Drama/Romantic</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Additional Column 2 -->
+            <div class="col-md-4">
+              <div class="card">
+                <img src="images/5.avif" class="card-img-top" alt="Card Image5">
+                <div class="card-body">
+                  <h5 class="card-title">Tiger 3</h5>
+                  <p class="card-text">Action/Thriller</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#recommendedMoviesCarousel"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#recommendedMoviesCarousel"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div id="liveEventsCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2>The Best of Live Events</h2>
+          <div class="row">
+            <!-- Column 4 -->
+            <div class="col-md-4">
+              <div class="card">
+                <img src="images/21.avif" class="card-img-top" alt="Card Image21">
+              </div>
+            </div>
+
+            <!-- Column 5 -->
+            <div class="col-md-4">
+              <div class="card">
+                <img src="images/22.avif" class="card-img-top" alt="Card Image22">
+              </div>
+            </div>
+
+            <!-- Column 6 -->
+            <div class="col-md-4">
+              <div class="card">
+                <img src="images/23.avif" class="card-img-top" alt="Card Image23">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional carousel items -->
+        <div class="carousel-item">
+          <h2>The Best of Live Events</h2>
+          <div class="row">
+            <!-- Additional Column 3 -->
+            <div class="col-md-4">
+              <div class="card">
+                <img src="images/24.avif" class="card-img-top" alt="Card Image24">
+              </div>
+            </div>
+
+            <!-- Additional Column 4 -->
+            <div class="col-md-4">
+              <div class="card">
+                <img src="images/25.avif" class="card-img-top" alt="Card Image25">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#liveEventsCarousel"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#liveEventsCarousel"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light text-center py-3">
+    <p>&copy; 2023 Bookmyshow. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    
+      var recommendedMoviesCarousel = new bootstrap.Carousel(document.getElementById('recommendedMoviesCarousel'));
+      var liveEventsCarousel = new bootstrap.Carousel(document.getElementById('liveEventsCarousel'));
+    });
+  </script>
+</body>
+
+</html>

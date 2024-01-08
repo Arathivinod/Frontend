@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Responsive Calculator</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <style>
+    .calculator-btn {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: 576px) {
+      .calculator-btn {
+        width: 100%;
+        margin-bottom: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+<h1 class="container display-3">Calculator</h1>
+<p class="container lead">This is a Responsive calculator</p>
+<div class="container mt-5">
+  <div class="row mb-2">
+    <div class="col-md-9">
+      <div class="card">
+        <div class="card-body">
+          <input type="text" id="result" class="form-control mb-3" readonly>
+
+          <div class="row mb-2">
+            <div class="col-4">
+              <button class="btn btn-primary calculator-btn" onclick="appendToResult('7')">7</button>
+            </div>
+            <div class="col-4">
+              <button class="btn btn-primary calculator-btn" onclick="appendToResult('8')">8</button>
+            </div>
+            <div class="col-4">
+              <button class="btn btn-primary calculator-btn" onclick="appendToResult('9')">9</button>
+            </div>
+          </div>
+
+          <div class="row mb-2">
+            <div class="col-4">
+              <button class="btn btn-primary calculator-btn" onclick="appendToResult('4')">4</button>
+            </div>
+            <div class="col-4">
+              <button class="btn btn-primary calculator-btn" onclick="appendToResult('5')">5</button>
+            </div>
+            <div class="col-4">
+              <button class="btn btn-primary calculator-btn" onclick="appendToResult('6')">6</button>
+            </div>
+          </div>
+
+          <div class="row mb-2">
+            <div class="col-4">
+              <button class="btn btn-primary calculator-btn" onclick="appendToResult('1')">1</button>
+            </div>
+            <div class="col-4">
+              <button class="btn btn-primary calculator-btn" onclick="appendToResult('2')">2</button>
+            </div>
+            <div class="col-4">
+              <button class="btn btn-primary calculator-btn" onclick="appendToResult('3')">3</button>
+            </div>
+          </div>
+
+          <div class="row mb-2">
+            <div class="col-4">
+              <button class="btn btn-primary calculator-btn" onclick="appendToResult('0')">0</button>
+            </div>
+            <div class="col-4">
+              <button class="btn btn-primary calculator-btn" onclick="clearResult()">C</button>
+            </div>
+            <div class="col-4">
+              <button class="btn btn-success calculator-btn" onclick="calculateResult()">=</button>
+            </div>
+          </div>
+          
+          <div class="row mt-2">
+            <div class="col-12">
+              <button class="btn btn-danger calculator-btn" onclick="clearInput()">Clear</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <div class="row mb-2">
+            <div class="col-12">
+              <button class="btn btn-warning calculator-btn" onclick="appendToResult('/')">/</button>
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="col-12">
+              <button class="btn btn-warning calculator-btn" onclick="appendToResult('*')">*</button>
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="col-12">
+              <button class="btn btn-warning calculator-btn" onclick="appendToResult('-')">-</button>
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="col-12">
+              <button class="btn btn-warning calculator-btn" onclick="appendToResult('+')">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function appendToResult(value) {
+    document.getElementById('result').value += value;
+  }
+
+  function clearResult() {
+    document.getElementById('result').value = '';
+  }
+
+  function clearInput() {
+    document.getElementById('result').value = '';
+  }
+
+  function calculateResult() {
+    try {
+      document.getElementById('result').value = eval(document.getElementById('result').value);
+    } catch (error) {
+      document.getElementById('result').value = 'Error';
+    }
+  }
+</script>
+
+<!-- Bootstrap JS (Optional) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-rs76FFjFz4I2QJqC3fiBpTtxSHhHi5Ip2HAZxh7Z14Sf8M+J/62+GJ5RG9X2WqjI" crossorigin="anonymous"></script>
+</body>
+</html>

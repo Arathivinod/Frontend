@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Programs</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS for body color */
+        body {
+            background-color: #333; /* Dark background color */
+            color: #fff; /* Light font color */
+            margin-bottom: 270px;
+            padding: 0;
+            font-family: 'Arial', sans-serif; /* Choose your preferred font family */
+        }
+        .navbar {
+            background-color: #4CAF50; /* Green navbar background color */
+            max-height: 60%; /* Adjust the max-width as needed */
+            margin: 0 auto; /* Center the navbar */
+        }
+
+        .navbar-brand img {
+            max-height: 70px; /* Adjust the max-height as needed */
+        }
+
+        .navbar-nav .nav-link {
+            color: #25452a; /* White font color for navbar links */
+        }
+
+        .navbar-toggler-icon {
+            background-color: #fff; /* White color for the toggler icon */
+        }
+
+        /* Footer styling */
+        footer {
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            color: #fff; /* Text color for the footer */
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            padding-top: 20px;
+        }
+
+        /* Workout card styling */
+        .workout-card {
+            background-color: #222; /* Dark background color for the workout card */
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        /* Main content section styling */
+        h1, h2, p {
+            color: #cfd2cf; /* Green font color for main content */
+        }
+
+        /* Button styling */
+        .btn-primary {
+            background-color: #4CAF50; /* Green button background color */
+            color: #fff; /* White font color for the button */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" class="img-fluid" />
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- <ul class="navbar-nav ms-auto"> -->
+                    <ul class="nav nav-tabs ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="workout.html">Workout</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">First Timers</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Trainers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Locations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Shop</a>
+                    </li>
+                </ul>
+
+                <a class="btn btn-outline-success" href="login.html">Log out</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <h1>Workout Programs</h1>
+
+        <!-- Workout Program 1 -->
+        <div class="row">
+            <div class="col-md-6 workout-card">
+                <img src="workout1.jpg" class="img-fluid" alt="Workout Program 1">
+                <h2>High-Intensity Interval Training (HIIT)</h2>
+                <p>A challenging workout involving short bursts of intense exercise alternated with periods of rest. Boost
+                    your metabolism and burn fat effectively.</p>
+                <a href="https://www.youtube.com/watch?v=8t63KkRwn_8" class="btn btn-primary" target="_blank">Watch
+                    Video</a>
+            </div>
+        </div>
+
+        <!-- Workout Program 2 -->
+        <div class="row">
+            <div class="col-md-6 workout-card">
+                <img src="workout2.jpg" class="img-fluid" alt="Workout Program 2">
+                <h2>Yoga for Flexibility</h2>
+                <p>Improve your flexibility, balance, and overall well-being with calming yoga sessions. Suitable for all
+                    fitness levels.</p>
+                <a href="https://www.youtube.com/watch?v=9kOCY0KNByw" class="btn btn-primary" target="_blank">Watch
+                    Video</a>
+            </div>
+        </div>
+
+        <!-- Workout Program 3 -->
+        <div class="row">
+            <div class="col-md-6 workout-card">
+                <img src="workout3.jpg" class="img-fluid" alt="Workout Program 3">
+                <h2>Strength Training with Barbells</h2>
+                <p>Build muscle and strength with this effective barbell workout. Perfect for those looking to increase
+                    their power and endurance.</p>
+                <a href="https://www.youtube.com/watch?v=gRVjAtPip0Y" class="btn btn-primary" target="_blank">Watch
+                    Video</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light fixed-bottom" style="display:none;" id="page-footer">
+        <div class="container">
+            <div class="row">
+                <!-- Column 1: About Us -->
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et justo vitae justo commodo blandit.
+                        Proin eu justo vel nunc blandit fringilla.</p>
+                </div>
+
+                <!-- Column 2: Contact Us and Location -->
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: example@email.com<br>Phone: 123-456-7890</p>
+
+                    <h5>Location</h5>
+                    <p>123 Fitness Street<br>Cityville, State 12345</p>
+                </div>
+
+                <!-- Column 3: Fitness Links -->
+                <div class="col-md-4">
+                    <h5>Fitness Links</h5>
+                    <p><a href="#">Fitness Program 1</a></p>
+                    <p><a href="#">Fitness Program 2</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript to show the footer only when scrolling
+        document.addEventListener("scroll", function () {
+            var footer = document.getElementById("page-footer");
+            if (window.scrollY > 100) {
+                footer.style.display = "block";
+            } else {
+                footer.style.display = "none";
+            }
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
